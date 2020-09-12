@@ -13,6 +13,8 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+
+
     public Long getId() {
         return id;
     }
@@ -30,10 +32,9 @@ public class Author {
     public Author() {
     }
 
-    public Author(String firstName, String lastName, Set<Book> books) {
+    public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.books = books;
     }
 
     public String getFirstName() {
